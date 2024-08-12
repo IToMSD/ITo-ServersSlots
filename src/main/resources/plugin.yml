@@ -1,0 +1,20 @@
+name: ITo-ServersSlots
+version: '1.0'
+main: pl.polsatgranie.itomsd.serversSlots.ServersSlots
+api-version: '1.13'
+load: STARTUP
+authors: [ PolsatGraniePL ]
+description: IToMSD plugin
+website: https://itomsd.com/
+commands:
+  serverslots:
+    description: Sets the maximum number of players on the server
+    usage: /serverslots [amount|reload]
+    aliases: [ss, sslots, slots]
+permissions:
+  itomsd.serversslots.admin:
+    description: Access to the /serverslots command [amount|reload]
+    default: op
+  itomsd.serversslots.bypass:
+    description: Possibility to enter the full server
+    default: op
